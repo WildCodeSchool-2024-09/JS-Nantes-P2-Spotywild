@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: #1f2021;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+.Mentions {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.Mentions,
+p {
+  color: rgb(240, 241, 241);
+}
+.Condition,
+span {
+  margin-right: 8px;
+}
+.Politique,
+span {
+  margin-left: 8px;
+}
+.icone,
+img {
+  display: flex;
+  height: 25px;
+  width: auto;
+  justify-content: space-around;
+}
+.spoty {
+  margin-left: 10px;
+}
