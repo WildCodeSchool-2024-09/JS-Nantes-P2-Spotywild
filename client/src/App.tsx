@@ -6,6 +6,9 @@ function App() {
     <>
       <h1>SpotyWild</h1>
       <main>
+        <section className="test">
+          <h2>Acceuil</h2>
+        </section>
         <Menu />
       </main>
     </>

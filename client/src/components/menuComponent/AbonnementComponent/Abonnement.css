@@ -1,0 +1,16 @@
+.abonnement {
+  display: flex;
+  align-items: center;
+}
+
+.abonnement p {
+  color: rgba(255, 255, 255, 0.623);
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.abonnement img {
+  width: auto;
+  height: 25px;
+  margin-left: 2rem;
+}
