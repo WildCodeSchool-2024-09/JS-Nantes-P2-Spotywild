@@ -1,12 +1,10 @@
-import "./App.css";
+import "./Globals.css";
 import Header from "./components/Header/Header";
 
 function App() {
   return (
     <>
-      <header>
-        <Header />
-      </header>
+      <Header />
       <h1>SpotyWild</h1>
     </>
   );

@@ -1,22 +1,16 @@
-* {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  padding-inline-start: 0;
-}
-.header_container {
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: 2px solid red;
 }
-.header_container ul {
+.header-container ul {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   width: fit-content;
 }
-.header_container ul > li {
+.header-container ul > li {
   padding: .5rem 1rem;
 }
