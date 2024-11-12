@@ -1,7 +1,11 @@
+import "./Search.css";
+
 const placeHoder = "Que voulez-vous écouter ?";
 
 function Search() {
-  return <input type="text" placeholder={placeHoder} />;
+  return (
+    <input className="header-input" type="text" placeholder={placeHoder} />
+  );
 }
 
 export default Search;

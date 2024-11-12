@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Header.css";
+import Search from "../Search/Search";
 
 function Header() {
   return (
@@ -10,15 +11,16 @@ function Header() {
             src="/images/logo-spotywild.png"
             alt="Logo du site de SpotyWild"
           />
+          <Search />
           <ul>
             <li>
-              <Link to="/">Artistes</Link>
+              <NavLink to="/">Accueil</NavLink>
             </li>
             <li>
-              <Link to="/">Albums</Link>
+              <NavLink to="albums">Albums</NavLink>
             </li>
             <li>
-              <Link to="/">Titres</Link>
+              <NavLink to="titles">Titres</NavLink>
             </li>
           </ul>
         </nav>
