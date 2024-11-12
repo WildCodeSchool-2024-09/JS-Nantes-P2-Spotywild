@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
 
-const Footer: React.FC = () => {
+function Footer() {
   return (
     <footer className="footer">
       {/* Section Langues */}
@@ -13,11 +13,11 @@ const Footer: React.FC = () => {
       <div className="Mentions">
         <p>© 2024 Tous droits réservés, SpotyWild®</p>
         <p>
-          <Link className="Politique" to="/Politique de confidentialité">
+          <Link className="Politique" to="/Confidentialité">
             Politique de confidentialité
           </Link>
           <span>|</span>
-          <Link className="Condition" to="/Conditions générales">
+          <Link className="Condition" to="/Conditions">
             Conditions générales
           </Link>
         </p>
@@ -56,6 +56,6 @@ const Footer: React.FC = () => {
       </div>
     </footer>
   );
-};
+}
 
 export default Footer;
