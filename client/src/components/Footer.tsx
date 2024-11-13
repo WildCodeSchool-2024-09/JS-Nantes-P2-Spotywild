@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
-import LanguageChoice from "./Languagechoice";
+import LanguageChoice from "./LanguageChoice";
 
-const Footer: React.FC = () => {
+function Footer() {
   return (
     <footer className="footer">
       <div>
@@ -11,18 +11,18 @@ const Footer: React.FC = () => {
       <div className="Mentions">
         <p>© 2024 Tous droits réservés, SpotyWild®</p>
         <p>
-          <Link className="Politique" to="/Politique de confidentialité">
+          <Link className="politique" to="/Politique de confidentialité">
             Politique de confidentialité
           </Link>
           <span>|</span>
-          <Link className="Condition" to="/Conditions générales">
+          <Link className="condition" to="/Conditions générales">
             Conditions générales
           </Link>
         </p>
       </div>
 
       {/* Section Réseaux Sociaux */}
-      <div className="icone">
+      <section className="icone">
         <a href="https://x.com" target="_blank" rel="noopener noreferrer">
           <img src="Icones/Twitter.png" alt="twitter" />
         </a>
@@ -51,9 +51,9 @@ const Footer: React.FC = () => {
         >
           <img src="Icones/Instagram.png" alt="Instagram" />
         </a>
-      </div>
+      </section>
     </footer>
   );
-};
+}
 
 export default Footer;
