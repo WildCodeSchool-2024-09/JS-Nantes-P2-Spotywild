@@ -1,6 +1,6 @@
 function Confidentialité() {
   return (
-    <>
+    <section>
       <h1>Politique de confidentialité</h1>
 
       <h2>Informations recueillies</h2>
@@ -36,7 +36,7 @@ function Confidentialité() {
         Si vous avez des questions sur cette politique de confidentialité,
         veuillez nous contacter à l'adresse suivante : contact@votre-site.com
       </p>
-    </>
+    </section>
   );
 }
 export default Confidentialité;

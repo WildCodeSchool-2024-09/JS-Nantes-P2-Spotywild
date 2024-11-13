@@ -13,18 +13,27 @@
   font-size: 0.8rem;
   text-align: center;
 }
-.Mentions,
-p {
+.Condition {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+.barre {
+  margin: 0 1rem 0 1rem;
+}
+.Politique {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+:hover {
+  color: white;
+}
+.Mentions p {
   color: rgb(240, 241, 241);
 }
-.Condition,
-span {
-  margin-right: 8px;
-}
-.Politique,
-span {
-  margin-left: 8px;
-}
+
 .icone,
 img {
   display: flex;

@@ -1,22 +1,19 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
+import LanguageChoice from "./Languagechoice";
 
 function Footer() {
   return (
     <footer className="footer">
-      {/* Section Langues */}
-      <div>
-        <img src="Icones/choix de langue.png" alt="Changer de langue" />
-      </div>
+      <LanguageChoice />
 
-      {/* Section Informations et Liens */}
       <div className="Mentions">
         <p>© 2024 Tous droits réservés, SpotyWild®</p>
         <p>
           <Link className="Politique" to="/Confidentialité">
             Politique de confidentialité
           </Link>
-          <span>|</span>
+          <span className="barre">|</span>
           <Link className="Condition" to="/Conditions">
             Conditions générales
           </Link>
@@ -26,7 +23,7 @@ function Footer() {
       {/* Section Réseaux Sociaux */}
       <div className="icone">
         <a href="https://x.com" target="_blank" rel="noopener noreferrer">
-          <img src="Icones/txitter.png" alt="twitter" />
+          <img src="Icones/Twitter.png" alt="twitter" />
         </a>
         <a
           href="https://facebook.com"
