@@ -12,6 +12,8 @@ import Home from "./pages/Home";
 import SearchPage from "./pages/SearchPage";
 import Titles from "./pages/titles";
 
+import "./Globals.css";
+
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
 
