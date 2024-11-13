@@ -11,6 +11,8 @@ import Accueil from "./pages/Accueil";
 import Albums from "./pages/Albums";
 import SearchPage from "./pages/SearchPage";
 import Titles from "./pages/titles";
+import Conditions from "./pages/Conditions";
+import Politique from "./pages/Politique";
 
 // Import additional components for new routes
 // Try creating these components in the "pages" folder
@@ -41,6 +43,14 @@ const router = createBrowserRouter([
       {
         path: "searchpage",
         element: <SearchPage />,
+      },
+      {
+        path: "Conditions",
+        element: <Conditions />,
+      },
+      {
+        path: "Politique",
+        element: <Politique />,
       },
     ], // Renders the App component for the home page
   },

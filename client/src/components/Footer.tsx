@@ -11,11 +11,11 @@ function Footer() {
       <div className="Mentions">
         <p>© 2024 Tous droits réservés, SpotyWild®</p>
         <p>
-          <Link className="politique" to="/Politique de confidentialité">
+          <Link className="politique" to="/Politique">
             Politique de confidentialité
           </Link>
           <span>|</span>
-          <Link className="condition" to="/Conditions générales">
+          <Link className="condition" to="/Conditions">
             Conditions générales
           </Link>
         </p>
