@@ -1,0 +1,13 @@
+:root {
+  --header-input-width: 350px;
+  --header-input-height: 35px;
+  --header-input-radius: calc(var(--header-input-height) / 2);
+}
+.header-input {
+  width: var(--header-input-width);
+  height: var(--header-input-height);
+  border: none;
+  border-radius: var(--header-input-radius);
+  box-shadow: 0 0 5px 3px #fff;
+  padding-left: 1rem;
+}

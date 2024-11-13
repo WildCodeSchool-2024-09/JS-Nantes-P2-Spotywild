@@ -1,8 +1,8 @@
+import { Outlet } from "react-router-dom";
 import "./Globals.css";
 import { useState } from "react";
 import Header from "./components/Header/Header";
 import Menu from "./components/menuComponent/Menu";
-// import ButtonMenu from "./components/menuComponent/ButtonMenuComponnent/ButtonMenu";
 
 function App() {
   const [isHidden, setIsHidden] = useState(false);
@@ -13,15 +13,11 @@ function App() {
 
   return (
     <>
-      <header>
-        <Header />
-      </header>
-
+      <Header />
       <main className="leMain">
         <section className="columne2">
-          <h2>Accueil</h2>
+          <Outlet />
         </section>
-
         <Menu isHidden={isHidden} menuState={menuState} />
       </main>
     </>

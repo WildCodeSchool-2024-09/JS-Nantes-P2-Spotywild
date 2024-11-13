@@ -1,8 +1,13 @@
+:root {
+  --header-container-width: 100%;
+  --header-container-height: 80px;
+}
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid red;
+  width: var(--header-container-width);
+  height: var(--header-container-height);
 }
 .header-container ul {
   display: flex;
@@ -12,5 +17,19 @@
   width: fit-content;
 }
 .header-container ul > li {
-  padding: .5rem 1rem;
+  padding: .5rem 1.5rem;
+}
+.header-container .active {
+  font-weight: bold;
+}
+.header-container :not(.active) {
+  font-size: .9rem;
+}
+.header-container a {
+  text-decoration: none;
+  color: inherit;
+  text-shadow: 0 0 5px #fff;
+}
+.header-container a:hover {
+  text-decoration: underline;
 }
