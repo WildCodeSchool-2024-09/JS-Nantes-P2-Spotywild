@@ -1,30 +1,22 @@
 import "./menu.css";
-import { useState } from "react";
 import Abonnement from "./AbonnementComponent/Abonnement";
-import Favoris from "./FavorisComponent/Favoris";
+import ButtonMenu from "./ButtonMenuComponnent/ButtonMenu";
+import Favoris from "./FavoriteComponent/Favorite";
 import PlayList from "./PlayListComponent/PlayList";
 
-function Menu() {
-  const [isHidden, setIsHidden] = useState(false);
+interface MenuProps {
+  isHidden: boolean;
+  menuState: () => void;
+}
 
-  const EtatMenu = () => {
-    setIsHidden((prevState) => !prevState);
-  };
+function Menu({ isHidden, menuState }: MenuProps) {
   return (
     <>
-      <button type="button" className="hideMenu" onClick={EtatMenu}>
-        <img
-          src={
-            isHidden
-              ? "images/Logo-footer-menu/Logo_voir_menu.png"
-              : "images/Logo-footer-menu/Logo_cacher_menu.png"
-          }
-          alt={isHidden ? "Afficher le menu" : "Cacher le menu"}
-        />
-      </button>
+      <ButtonMenu isHidden={isHidden} menuState={menuState} />
+
       <aside className={`menu ${isHidden ? "menu-hidden" : "menu-visible"}`}>
         <h2>User Name</h2>
-        <section className="intéraction">
+        <section className="interaction">
           <PlayList />
           <Favoris />
           <Abonnement />

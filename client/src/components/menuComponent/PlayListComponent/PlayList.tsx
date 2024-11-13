@@ -5,7 +5,7 @@ function PlayList() {
     <>
       <section className="playlist">
         <img
-          src="images/Logo-footer-menu/logo_PlayList-removebg-preview.png"
+          src="images/Logo-footer-menu/logo_PlayList-compacter.png"
           alt="Logo de la PlayList"
         />
         <p>Ma PlayList</p>

@@ -5,7 +5,7 @@ function Abonnement() {
     <>
       <section className="abonnement">
         <img
-          src="images/Logo-footer-menu/Logo_Cloche_Blanche-modified-removebg-preview.png"
+          src="images/Logo-footer-menu/Logo_Cloche_compacter.png"
           alt="Logo d'abonnement"
         />
         <p> Mes Abonnements</p>
