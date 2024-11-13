@@ -33,3 +33,21 @@
 .header-container a:hover {
   text-decoration: underline;
 }
+@media screen and (max-width: 768px) {
+  .header-container {
+    display: grid;
+    grid-template-columns: .8fr .2fr;
+    grid-template-rows: 1fr;
+  }
+  .header-container img {
+    grid-column: 1 / 2;
+    place-self: center;
+  }
+  .header-container a {
+    grid-column: 2 / 3;
+    place-self: center;
+  }
+  .header-container ul {
+    display: none;
+  }
+}
