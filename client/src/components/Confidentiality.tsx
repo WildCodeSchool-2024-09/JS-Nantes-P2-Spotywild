@@ -1,4 +1,4 @@
-function Confidentialité() {
+function Confidentiality() {
   return (
     <section>
       <h1>Politique de confidentialité</h1>
@@ -39,4 +39,4 @@ function Confidentialité() {
     </section>
   );
 }
-export default Confidentialité;
+export default Confidentiality;
