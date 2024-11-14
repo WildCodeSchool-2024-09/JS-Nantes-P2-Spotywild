@@ -1,7 +1,7 @@
 import "./Conditions.css";
 function Conditions() {
   return (
-    <section>
+    <section className="condi-title">
       <h1>Conditions Générales d'Utilisation</h1>
 
       <h2>Introduction</h2>

@@ -1,11 +1,14 @@
-section {
+.condi-title {
   margin: 1rem 1rem 1rem 1rem;
 }
-h1 {
-  font-size: 2rem;
-  text-align: center;
+
+.condi-title > h2 {
+  font-size: 1rem;
+  text-decoration: underline;
 }
-h2 {
+.condi-title > h1 {
+  text-align: center;
   text-decoration: underline;
   margin: 1rem 0 1rem 0;
+  font-size: 2rem;
 }

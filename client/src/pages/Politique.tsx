@@ -2,7 +2,7 @@ import "./Politique.css";
 
 function Politique() {
   return (
-    <section>
+    <section className="politic-title ">
       <h1>Politique de confidentialité</h1>
 
       <h2>Informations recueillies</h2>
