@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
-import LanguageChoice from "./LanguageChoice";
+import LanguageChoice from "../LanguageChoice/LanguageChoice";
 
 function Footer() {
   return (
@@ -8,14 +8,14 @@ function Footer() {
       <div>
         <LanguageChoice />
       </div>
-      <div className="Mentions">
+      <div className="mentions">
         <p>© 2024 Tous droits réservés, SpotyWild®</p>
         <p>
-          <Link className="politique" to="/Politique de confidentialité">
+          <Link className="politique" to="/Politique">
             Politique de confidentialité
           </Link>
           <span>|</span>
-          <Link className="condition" to="/Conditions générales">
+          <Link className="condition" to="/Conditions">
             Conditions générales
           </Link>
         </p>
