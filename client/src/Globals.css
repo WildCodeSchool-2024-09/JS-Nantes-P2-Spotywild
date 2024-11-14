@@ -3,6 +3,7 @@
   /* color */
   --primary-color: #0f0f0f;
   --secondary-color: #1f2021;
+  --tertiary-color: #5eada8;
   --text-light-color: #ffffff;
   /* font */
   --font-size-small: .8rem;
@@ -23,7 +24,11 @@ body {
   color: var(--text-light-color);
   background-color: var(--primary-color);
 }
+#root {
+  width: 100vw;
+}
 header {
+  width: 100%;
   background-color: var(--secondary-color);
 }
 header a {
@@ -31,5 +36,6 @@ header a {
 }
 
 header input {
+  border: 3px solid var(--tertiary-color);
   font-size: var(--font-size-small);
 }
