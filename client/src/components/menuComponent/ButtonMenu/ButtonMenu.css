@@ -1,18 +1,67 @@
-.hiddenMenu img {
-  width: 95%;
-  height: 90%;
-}
-
-.hiddenMenu {
+.button-title {
   background: none;
   border: none;
-  box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.3);
-  height: 20px;
-  width: 20px;
+  justify-content: center;
+  font-size: 1.8rem;
+  border-bottom: 0.2px solid rgba(255, 255, 255, 0.616);
+  height: 50px;
+  width: 100%;
   color: white;
-  border-radius: 5px;
-  position: absolute;
-  right: 2.2%;
-  bottom: 85.5%;
   cursor: pointer;
+  position: relative; /* Fixer le bouton */
+}
+
+.button-title:hover {
+  background-color: rgba(58, 56, 56, 0.842);
+  border-radius: 10%;
+}
+
+.button-expanded {
+  display: flex;
+  justify-self: right;
+  align-self: center;
+  width: 100%;
+  transition: width 1.5s ease;
+  animation: expandButton 2s 0.5s forwards;
+}
+
+.button-collapsed {
+  display: flex;
+  justify-self: right;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  transition: width 1s ease;
+  padding: 0;
+  box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.3);
+  animation: shrinkButton 2s 0.5s forwards;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Animation de réduction du bouton */
+@keyframes shrinkButton {
+  0% {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  100% {
+    width: 40px;
+    padding: 10px;
+  }
+}
+
+/* Animation d'agrandissement du bouton */
+@keyframes expandButton {
+  0% {
+    width: 40px;
+    padding: 10px;
+  }
+  100% {
+    width: 100%;
+    padding: 10px 20px;
+  }
 }

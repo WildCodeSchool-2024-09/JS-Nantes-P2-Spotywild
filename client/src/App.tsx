@@ -3,13 +3,20 @@ import "./Globals.css";
 import { useState } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header/Header";
+import ButtonMenu from "./components/menuComponent/ButtonMenu/ButtonMenu";
 import Menu from "./components/menuComponent/Menu";
 
 function App() {
-  const [isHidden, setIsHidden] = useState(false);
+  const [isHidden, setIsHidden] = useState(true);
+  const [buttonAnimating, setButtonAnimating] = useState(false);
 
   const menuState = () => {
+    // Inverser l'état du bouton immédiatement
     setIsHidden((prevState) => !prevState);
+
+    setTimeout(() => {
+      setButtonAnimating((prevState) => !prevState);
+    }, 300);
   };
 
   return (
@@ -19,7 +26,16 @@ function App() {
         <section className="column-2">
           <Outlet />
         </section>
-        <Menu isHidden={isHidden} menuState={menuState} />
+        <section
+          className={`column-1 ${isHidden ? "background-hidden" : "background-visible"}`}
+        >
+          <ButtonMenu
+            buttonAnimating={buttonAnimating}
+            isHidden={isHidden}
+            menuState={menuState}
+          />
+          <Menu isHidden={isHidden} />
+        </section>
       </main>
       <Footer />
     </>

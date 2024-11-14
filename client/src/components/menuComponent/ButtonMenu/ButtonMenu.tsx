@@ -2,21 +2,27 @@ import "./ButtonMenu.css";
 
 interface buttonState {
   isHidden: boolean;
+  buttonAnimating: boolean;
   menuState: () => void;
 }
 
-function ButtonMenu({ isHidden, menuState }: buttonState) {
+function ButtonMenu({ isHidden, buttonAnimating, menuState }: buttonState) {
   return (
     <>
-      <button type="button" className="hiddenMenu" onClick={menuState}>
-        <img
-          src={
-            isHidden
-              ? "images/Logo-footer-menu/Logo_voir_menu-compacter.png"
-              : "images/Logo-footer-menu/Logo_cacher_menu-compacter.png"
-          }
-          alt={isHidden ? "Afficher le menu" : "Cacher le menu"}
-        />
+      <button
+        type="button"
+        className={`button-title ${buttonAnimating ? (isHidden ? "button-collapsed" : "button-expanded") : ""}`}
+        onClick={menuState}
+      >
+        {isHidden ? (
+          <img
+            src="images/Logo-footer-menu/Logo_voir_menu-compacter.png"
+            alt="Afficher le menu"
+            className="icon"
+          />
+        ) : (
+          "User Name"
+        )}
       </button>
     </>
   );
