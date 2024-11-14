@@ -9,7 +9,10 @@ export default function Artist({ imgSrc, name }: AlbumsI) {
   return (
     <figure className="artist-card">
       <img src={imgSrc} alt={`Artist named ${name}`} />
-      <figcaption>{name}</figcaption>
+      <figcaption>
+        {name} <br />
+        <span> Description artist</span>
+      </figcaption>
     </figure>
   );
 }
