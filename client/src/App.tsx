@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import "./Globals.css";
 import { useState } from "react";
+import Footer from "./components/Footer";
 import Header from "./components/Header/Header";
 import Menu from "./components/menuComponent/Menu";
 
@@ -20,6 +21,7 @@ function App() {
         </section>
         <Menu isHidden={isHidden} menuState={menuState} />
       </main>
+      <Footer />
     </>
   );
 }
