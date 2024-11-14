@@ -14,8 +14,8 @@ function App() {
   return (
     <>
       <Header />
-      <main className="leMain">
-        <section className="columne2">
+      <main className="the-main">
+        <section className="column-2">
           <Outlet />
         </section>
         <Menu isHidden={isHidden} menuState={menuState} />

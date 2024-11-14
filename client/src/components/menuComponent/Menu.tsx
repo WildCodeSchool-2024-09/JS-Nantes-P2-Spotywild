@@ -1,8 +1,8 @@
-import "./menu.css";
-import Abonnement from "./AbonnementComponent/Abonnement";
-import ButtonMenu from "./ButtonMenuComponnent/ButtonMenu";
-import Favoris from "./FavoriteComponent/Favorite";
-import PlayList from "./PlayListComponent/PlayList";
+import "./Menu.css";
+import ButtonMenu from "./ButtonMenu/ButtonMenu";
+import Favorite from "./Favorite/Favorite";
+import PlayList from "./PlayList/PlayList";
+import Subscribe from "./Subscribe/Subscribe";
 
 interface MenuProps {
   isHidden: boolean;
@@ -14,12 +14,12 @@ function Menu({ isHidden, menuState }: MenuProps) {
     <>
       <ButtonMenu isHidden={isHidden} menuState={menuState} />
 
-      <aside className={`menu ${isHidden ? "menu-hidden" : "menu-visible"}`}>
+      <aside className={`menu ${isHidden ? "menu-hidden" : "menu-show"}`}>
         <h2>User Name</h2>
         <section className="interaction">
           <PlayList />
-          <Favoris />
-          <Abonnement />
+          <Favorite />
+          <Subscribe />
         </section>
       </aside>
     </>

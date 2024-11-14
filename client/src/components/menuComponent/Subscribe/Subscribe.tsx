@@ -1,9 +1,9 @@
-import "./Abonnement.css";
+import "./Subscribe.css";
 
-function Abonnement() {
+function Subscribe() {
   return (
     <>
-      <section className="abonnement">
+      <section className="subscribe">
         <img
           src="images/Logo-footer-menu/Logo_Cloche_compacter.png"
           alt="Logo d'abonnement"
@@ -14,4 +14,4 @@ function Abonnement() {
   );
 }
 
-export default Abonnement;
+export default Subscribe;

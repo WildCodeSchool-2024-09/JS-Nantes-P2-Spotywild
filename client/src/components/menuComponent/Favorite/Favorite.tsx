@@ -1,9 +1,9 @@
 import "./Favorite.css";
 
-function Favoris() {
+function Favorite() {
   return (
     <>
-      <section className="favoris">
+      <section className="favorite">
         <img
           src="images/Logo-footer-menu/Logo_Favoris_compacter.png"
           alt="Logo des favoris"
@@ -14,4 +14,4 @@ function Favoris() {
   );
 }
 
-export default Favoris;
+export default Favorite;
