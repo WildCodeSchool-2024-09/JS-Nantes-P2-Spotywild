@@ -8,7 +8,7 @@ function Footer() {
       <div>
         <LanguageChoice />
       </div>
-      <div className="Mentions">
+      <div className="mentions">
         <p>© 2024 Tous droits réservés, SpotyWild®</p>
         <p>
           <Link className="politique" to="/Politique">

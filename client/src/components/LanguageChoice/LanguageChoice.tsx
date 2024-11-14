@@ -1,7 +1,7 @@
 import "./Languagechoice.css";
-import type { ChangeEvent } from "react";
 
 import { useState } from "react";
+import type { ChangeEvent } from "react";
 
 const LanguageChoice = () => {
   const [language, setLanguage] = useState("fr");
