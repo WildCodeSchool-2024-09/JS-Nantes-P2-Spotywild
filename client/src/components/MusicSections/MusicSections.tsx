@@ -1,24 +1,8 @@
 import "./MusicSections.css";
+import type { ArtistI } from "../../types/musicSection";
 
-interface Artist {
-  titreImgRock: string;
-
-  id: number;
-  name: string;
-  country: string;
-  imgSrc: string;
-  description: string;
-  albums: {
-    albumName: string;
-    albumImg: string;
-    description: string;
-    songs: string[];
-  };
-  slicedArray: string;
-}
-
-function MusicSections({ Artists }) {
-  const slicedArray: Artist[] = Artists.sort(() => Math.random() - 0.5).slice(
+function MusicSections({ Artists }: { Artists: ArtistI[] }) {
+  const slicedArray: ArtistI[] = Artists.sort(() => Math.random() - 0.5).slice(
     0,
     4,
   );
