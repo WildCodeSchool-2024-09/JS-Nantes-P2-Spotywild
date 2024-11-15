@@ -7,7 +7,8 @@
 }
 .icone {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-flow: row wrap;
 }
 .icone > a > img {
   height: 25px;
