@@ -1,0 +1,32 @@
+.music-section {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-left: 350px;
+  margin-top: 30px;
+}
+.imgS {
+  background-color: rgb(0, 0, 0);
+  border: rgb(125, 253, 147) 1px solid;
+  margin: 10px;
+  width: 15%;
+  height: 250px;
+  border-radius: 16px;
+}
+
+.imgS:hover {
+  background-color: rgb(33, 32, 32);
+  border: rgb(125, 253, 147) 1px solid;
+  margin: 10px;
+  width: 16%;
+  height: 250px;
+  border-radius: 16px;
+}
+
+.images {
+  margin-top: 20px;
+  height: 150px;
+  width: 100%;
+  border-radius: 16px;
+  object-fit: contain;
+}
