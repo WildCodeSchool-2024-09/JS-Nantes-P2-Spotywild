@@ -1,14 +1,25 @@
 import { Outlet } from "react-router-dom";
 import "./Globals.css";
-import Footer from "./components/Footer";
+import { useState } from "react";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import Menu from "./components/menuComponent/Menu";
 
 function App() {
+  const [isHidden, setIsHidden] = useState(false);
+
+  const menuState = () => {
+    setIsHidden((prevState) => !prevState);
+  };
+
   return (
     <>
       <Header />
-      <main className="fa-main">
+      <main className="the-main">
         <Outlet />
+        <section className="column-2">
+          <Menu isHidden={isHidden} menuState={menuState} />
+        </section>
       </main>
       <Footer />
     </>

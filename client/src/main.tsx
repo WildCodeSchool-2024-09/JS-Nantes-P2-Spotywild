@@ -8,6 +8,8 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import Accueil from "./pages/Accueil";
 import Albums from "./pages/Albums";
+import Conditions from "./pages/Conditions";
+import Politique from "./pages/Politique";
 import SearchPage from "./pages/SearchPage";
 import Titles from "./pages/titles";
 
@@ -40,6 +42,14 @@ const router = createBrowserRouter([
       {
         path: "searchpage",
         element: <SearchPage />,
+      },
+      {
+        path: "Conditions",
+        element: <Conditions />,
+      },
+      {
+        path: "Politique",
+        element: <Politique />,
       },
     ], // Renders the App component for the home page
   },
