@@ -7,10 +7,10 @@ function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className="fa-main">
         <Outlet />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

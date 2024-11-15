@@ -57,9 +57,9 @@ if (rootElement == null) {
 
 // Render the app inside the root element
 createRoot(rootElement).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
+  // <StrictMode>
+  <RouterProvider router={router} />,
+  // </StrictMode>,
 );
 
 /**

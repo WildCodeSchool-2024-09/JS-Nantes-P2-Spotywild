@@ -1,20 +1,24 @@
 import "./CategoryCard.css";
 
-interface CardI {
-  id: number;
-  name: string;
-  imgSrc: string;
-}
 interface CharacterI {
-  character: CardI;
+  titreImg: string;
+  genre: string;
+  color: string;
 }
 
-function CategoryCard({ character }: CharacterI) {
+interface propChar {
+  character: CharacterI;
+}
+
+function CategoryCard({ character }: propChar) {
   return (
     <>
-      <figure className="category-card">
-        <img src="" alt="" />
-        <figcaption>{character.name}</figcaption>
+      <figure
+        className="category-card"
+        style={{ backgroundColor: character.color }}
+      >
+        <figcaption>{character.genre}</figcaption>
+        <img src={character.titreImg} alt="" />
       </figure>
     </>
   );
