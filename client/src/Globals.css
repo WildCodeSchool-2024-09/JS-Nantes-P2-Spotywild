@@ -27,6 +27,9 @@ body {
 #root {
   width: 100vw;
 }
+a {
+  color: inherit;
+}
 header {
   width: 100%;
   background-color: var(--secondary-color);
@@ -44,6 +47,16 @@ body {
   background-color: #0f0f0f;
 }
 
+footer {
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  height: fit-content;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  background-color: #1f2021;
+  align-items: center;
+}
+
 .the-main {
   display: grid;
   grid-template-columns: 75% 24%;
@@ -59,5 +72,10 @@ h2 {
 @media (max-width: 780px) {
   .leMain {
     grid-template-columns: 55% 44%;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
   }
 }
